@@ -1,0 +1,182 @@
+<ul class="nav nav-pills mb-3 my-3 p-2">
+    <li class="nav-item mr-3">
+        <a href="subject:;"
+        (click)="onSkillchange('math')"
+        [ngClass]="{
+            active : selectedSkill.includes('math')
+        }"
+        class="nav-link px-4 py-2" style="background-color:red;
+        color:white;
+        padding: 10px;
+        margin:10px;">Math</a>
+    </li>
+
+    <li class="nav nav-item mr-3">
+        <a href="subject:;"
+        (click)="onSkillchange('english')"
+        [ngClass]="{
+            active : selectedSkill.includes('english')
+        }"
+        class="nav-link px-4 py-2" style="background-color:blueviolet;
+        color:white;
+        padding:10px;
+        margin:10px;">English</a>
+    </li>
+
+    <li class="nav nav-item mr-3">
+        <a href="subject:;"
+        (click)="onSkillchange('geography')"
+        [ngClass]="{
+            active : selectedSkill.includes('geography')
+        }"
+        class="nav nav-link px-4 py-2" style="background-color:green;
+        color:white;
+        padding:10px;
+        margin:10px;">Geography</a>
+    </li>
+
+    <li class="nav nav-item mr-3">
+        <a href="subject:;"
+        (click)="onSkillchange('marathi')"
+        [ngClass]="{
+            active : selectedSkill.includes('marathi')
+        }"
+        class="nav nav-link px-4 py-2" style="background-color:blue;
+        color:white;
+        padding:10px;
+        margin:10px;">Marathi</a>
+    </li>
+
+    <li class="nav nav-item mr-3">
+        <a href="subject:;"
+        (click)="onSkillchange('hindi')"
+        [ngClass]="{
+            active : selectedSkill.includes('hindi')
+        }"
+        class="nav nav-link px-4 py-2" style="background-color:brown;
+        color:white;
+        padding:10px;
+        margin:10px;">Hindi</a>
+    </li>
+</ul>
+
+<hr>
+
+<div class="tab-content">
+    <div class="card">
+        <div *ngIf="selectedSkill.includes('math')"
+        class="card-body" style="background-color:pink;padding:10px;
+        margin:10px;
+        box-shadow:2px 2px 2px grey;">
+        <strong>Math</strong>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in tortor nec sem sagittis egestas ut sit amet felis. Nunc iaculis quis sem iaculis lobortis. Aenean lectus neque, dictum vitae semper quis, sagittis et erat. Mauris vulputate dolor eget felis aliquam, nec bibendum neque malesuada. Phasellus bibendum sit amet libero a tincidunt. Sed egestas vehicula sagittis. Aenean mattis arcu sed felis mollis porta ut et ante. Etiam et varius est, lobortis placerat justo. Morbi et magna id diam ultricies vestibulum. Aenean sit amet ex maximus, efficitur sem eget, feugiat nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus sed est mauris. Vivamus bibendum purus at mi facilisis, aliquet accumsan arcu scelerisque.
+    </div>
+
+    <div *ngIf="selectedSkill.includes('english')"
+    class="card-body" style="background-color:skyblue;
+    padding:10px;
+    margin:10px;
+    box-shadow:2px 2px 2px grey;">
+    <strong>English</strong>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in tortor nec sem sagittis egestas ut sit amet felis. Nunc iaculis quis sem iaculis lobortis. Aenean lectus neque, dictum vitae semper quis, sagittis et erat. Mauris vulputate dolor eget felis aliquam, nec bibendum neque malesuada. Phasellus bibendum sit amet libero a tincidunt. Sed egestas vehicula sagittis. Aenean mattis arcu sed felis mollis porta ut et ante. Etiam et varius est, lobortis placerat justo. Morbi et magna id diam ultricies vestibulum. Aenean sit amet ex maximus, efficitur sem eget, feugiat nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus sed est mauris. Vivamus bibendum purus at mi facilisis, aliquet accumsan arcu scelerisque.
+</div>
+
+<div *ngIf="selectedSkill.includes('geography')"
+class="card-body" style="background-color:lightseagreen;
+padding:10px;
+margin:10px;
+box-shadow:2px 2px 2px grey;">
+<strong>Geography</strong>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in tortor nec sem sagittis egestas ut sit amet felis. Nunc iaculis quis sem iaculis lobortis. Aenean lectus neque, dictum vitae semper quis, sagittis et erat. Mauris vulputate dolor eget felis aliquam, nec bibendum neque malesuada. Phasellus bibendum sit amet libero a tincidunt. Sed egestas vehicula sagittis. Aenean mattis arcu sed felis mollis porta ut et ante. Etiam et varius est, lobortis placerat justo. Morbi et magna id diam ultricies vestibulum. Aenean sit amet ex maximus, efficitur sem eget, feugiat nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus sed est mauris. Vivamus bibendum purus at mi facilisis, aliquet accumsan arcu scelerisque.
+</div>
+
+<div *ngIf="selectedSkill.includes('marathi')"
+class="card-body" style="background-color:beige;
+padding:10px;
+margin:10px;
+box-shadow:2px 2px 2px grey;">
+<strong>Marathi</strong>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in tortor nec sem sagittis egestas ut sit amet felis. Nunc iaculis quis sem iaculis lobortis. Aenean lectus neque, dictum vitae semper quis, sagittis et erat. Mauris vulputate dolor eget felis aliquam, nec bibendum neque malesuada. Phasellus bibendum sit amet libero a tincidunt. Sed egestas vehicula sagittis. Aenean mattis arcu sed felis mollis porta ut et ante. Etiam et varius est, lobortis placerat justo. Morbi et magna id diam ultricies vestibulum. Aenean sit amet ex maximus, efficitur sem eget, feugiat nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus sed est mauris. Vivamus bibendum purus at mi facilisis, aliquet accumsan arcu scelerisque.
+</div>
+
+<div *ngIf="selectedSkill.includes('hindi')" class="card-body" style="background-color:aqua;
+padding:10px;
+margin:10px;
+box-shadow:2px 2px 2px grey;">
+    <strong>Hindi</strong>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in tortor nec sem sagittis egestas ut sit amet felis. Nunc iaculis quis sem iaculis lobortis. Aenean lectus neque, dictum vitae semper quis, sagittis et erat. Mauris vulputate dolor eget felis aliquam, nec bibendum neque malesuada. Phasellus bibendum sit amet libero a tincidunt. Sed egestas vehicula sagittis. Aenean mattis arcu sed felis mollis porta ut et ante. Etiam et varius est, lobortis placerat justo. Morbi et magna id diam ultricies vestibulum. Aenean sit amet ex maximus, efficitur sem eget, feugiat nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus sed est mauris. Vivamus bibendum purus at mi facilisis, aliquet accumsan arcu scelerisque.
+</div>
+</div>
+</div>
+
+<hr>
+
+<ul class="nav nav-pills mb-3 mt-3 p-2">
+    <li class="nav-item mr-3">
+        <a href="colors:;" (click)="oncolorchange('purple')" [ngClass]="{
+            active : selectedColor.includes('purple')
+        }"
+        class="nav-link px-4 py-2" style="background-color:purple;
+        color:white;">Purple</a>
+    </li>
+
+    
+        <li class="nav-item mr-3">
+            <a href="colors:;" (click)="oncolorchange('green')"[ngClass]="{
+                active : selectedColor.includes('green')
+            }"
+            class="nav-link px-4 py-2" style="background-color:green;
+            color:white;">Green</a>
+        </li>
+
+        <li class="nav nav-item mr-3">
+            <a href="colors:;" (click)="oncolorchange('red')"[ngClass]="{
+                active : selectedColor.includes('red')
+            }"
+            class="nav nav-link px-4 py-2" style="background-color:red;
+            color:white;">Red</a>
+        </li>
+
+        <li class="nav-item mr-3">
+            <a href="colors:;" (click)="oncolorchange('pink')"[ngClass]="{
+                active : selectedColor.includes('pink')
+            }"
+            class="nav-link px-4 py-2" style="background-color:pink;
+            color:white;">Pink</a>
+        </li>
+
+        <li class="nav-item mr-3">
+            <a href="colors:;"(click)="oncolorchange('blue')"[ngClass]="{
+                active : selectedColor.includes('blue')
+            }"
+            class="nav-link px-4 py-2" style="background-color:blue;
+            color:white;">Blue</a>
+        </li>
+</ul>
+
+<hr>
+
+<div class="tab-content">
+    <div class="card">
+        <div *ngIf="selectedColor.includes('purple')" class="card-body">
+            <strong>Purple</strong>
+            The rose is one of the most beautiful, popular, and attractive flowers in the world. It is famous for its lovely colours, sweet fragrance, and soft petals. Roses are grown in gardens, parks, homes, and commercial flower farms.The rose is commonly known as the King of Flowers because of its beauty and importance. It is widely used for decoration, gifting, perfumes, cosmetics, and various cultural celebrations.
+        </div>
+        <div *ngIf="selectedColor.includes('green')" class="card-body">
+            <strong>Green</strong>
+            The rose is one of the most beautiful, popular, and attractive flowers in the world. It is famous for its lovely colours, sweet fragrance, and soft petals. Roses are grown in gardens, parks, homes, and commercial flower farms.The rose is commonly known as the King of Flowers because of its beauty and importance. It is widely used for decoration, gifting, perfumes, cosmetics, and various cultural celebrations.
+        </div>
+        <div *ngIf="selectedColor.includes('red')" class="card-body">
+            <strong>Red</strong>
+            The rose is one of the most beautiful, popular, and attractive flowers in the world. It is famous for its lovely colours, sweet fragrance, and soft petals. Roses are grown in gardens, parks, homes, and commercial flower farms.The rose is commonly known as the King of Flowers because of its beauty and importance. It is widely used for decoration, gifting, perfumes, cosmetics, and various cultural celebrations.
+        </div>
+        <div *ngIf="selectedColor.includes('pink')" class="card-body">
+            <strong>Pink</strong>
+            The rose is one of the most beautiful, popular, and attractive flowers in the world. It is famous for its lovely colours, sweet fragrance, and soft petals. Roses are grown in gardens, parks, homes, and commercial flower farms.The rose is commonly known as the King of Flowers because of its beauty and importance. It is widely used for decoration, gifting, perfumes, cosmetics, and various cultural celebrations.
+        </div>
+        <div *ngIf="selectedColor.includes('blue')" class="card-body">
+            <strong>Blue</strong>
+            The rose is one of the most beautiful, popular, and attractive flowers in the world. It is famous for its lovely colours, sweet fragrance, and soft petals. Roses are grown in gardens, parks, homes, and commercial flower farms.The rose is commonly known as the King of Flowers because of its beauty and importance. It is widely used for decoration, gifting, perfumes, cosmetics, and various cultural celebrations.
+        </div>
+    </div>
+</div>
